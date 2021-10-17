@@ -14,7 +14,4 @@ answer = 0
 for i in time:
     total += i
     answer += total
-
-    
-
 print(answer)
