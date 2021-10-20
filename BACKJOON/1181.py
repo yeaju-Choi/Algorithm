@@ -17,15 +17,19 @@ for _ in range(n):
     arr.append(input())
 
 arr = list(set(arr)) # 중복 제거 
-print(arr)
-answer = [] 
-min = arr[0]
-for i in range(1,len(arr)+1):
-    if len(min) > len(arr[i]):
-        min = i
-    answer.append(min)
-    del arr[arr.index(min)]
-# print(answer)
+
+arr.sort(key=lambda x: ((len(x)),x)) # 길이순으로 정렬 
+
+# print(*arr)
+# for i in arr:
+#     print(i)
+
+answer = "\n".join(arr)
+print(answer)
+
+
+
+
 
 
 
