@@ -28,6 +28,7 @@ S의 최솟값을 출력하는 프로그램을 작성하시오.
 첫째 줄에 S의 최솟값을 출력한다.
 '''
 
+
 n = int(input())
 a = list(map(int,input().split()))
 b = list(map(int,input().split()))
@@ -35,9 +36,6 @@ b = list(map(int,input().split()))
 
 a.sort()
 b.sort(reverse=True)
-print(a)
-print(b)
-
 
 answer = list(map(lambda x,y:x*y , a,b))
 
