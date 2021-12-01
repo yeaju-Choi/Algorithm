@@ -19,7 +19,13 @@ def bfs(graph,start,visited):
 
 
 
-
+def dfs(graph,v,start):
+    
+    visited[v] = True
+    print(v, end =" ")
+    for i in graph[v]:
+        if not visited[i]:
+            dfs(graph,i,visited)
 
 graph =  [
 
