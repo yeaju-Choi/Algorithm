@@ -4,6 +4,7 @@
 # def binary_search(arr,find):
 #     count = 0
 #     start = 0
+
 #     end = len(arr) - 1
 #     while start <= end:
 
@@ -40,20 +41,28 @@
 #     print(i,end=" ")
 
 
-from collections import Counter
+##########################################
+##########################################
 
-N = int(input())
+# from collections import Counter
 
-Card_list = list(map(int, input().split()))
+# N = int(input())
 
-M = int(input())
+# Card_list = list(map(int, input().split()))   
 
-Card = list(map(int, input().split()))
+# M = int(input())
 
-Card_counter = Counter(Card_list)
+# Card = list(map(int, input().split()))
 
-print(Card_counter)
+# Card_counter = Counter(Card_list)
 
-for i in Card:
-    print(Card_counter[i], end=' ')
+# print(Card_counter)
+
+# for i in Card:
+#     print(Card_counter[i], end=' ')
     
+
+
+##########################################
+##########################################
+
