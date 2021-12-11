@@ -1,22 +1,28 @@
-N = int(input())
-budget = list(map(int, input().split()))
-M = int(input())
+import sys 
+input = sys.stdin.readline
 
-start, end = 0, max(budget)
-total_budget = 0
+n = int(input()) 
+budget_list = list(map(int,input().split())) 
+max_budget = int(input()) 
 
-if sum(budget) >= end:
-	print(max(budget))
-else:
-    while start <= end:
-        mid = (start+end) // 2
+start = 0
+end = max(budget_list) 
 
-        total_budget = 0
-        for i in budget:
-            total_budget += min(mid, i)
+while start<=end:
+    mid = (start + end) // 2  # 예산 상한액 
+   
+    total_budget = 0
+    for data in budget_list: 
+        total_budget += min(data,mid)  # 상한액보다 높을 순 x 
+    
 
-        if total_budget > M:
-            end = mid - 1
-        else:
-            start = mid + 1
-    print(mid)
+    if total_budget <= max_budget: # 지출양이 최대값보다 작음 
+        start = mid + 1 
+    else:
+        end = mid - 1 
+
+
+print(end) 
+
+
+

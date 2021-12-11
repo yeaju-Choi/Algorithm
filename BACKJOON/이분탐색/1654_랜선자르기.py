@@ -20,9 +20,7 @@ while start <= end:
     count = 0
     for n in lan:
         count += n // mid
-        
     if count >= b:
-
         start = mid + 1
     else:
         end = mid - 1 
