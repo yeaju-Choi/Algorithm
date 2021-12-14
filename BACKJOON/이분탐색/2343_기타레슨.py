@@ -46,10 +46,10 @@ while start <= end:
         #     index += 1 
         #     blueray[index] += data 
             
-    print("==> mid", end =" ")
-    print(mid)
-    print("==> dictronary", end =" ")
-    print(blueray)
+    # print("==> mid", end =" ")
+    # print(mid)
+    # print("==> dictronary", end =" ")
+    # print(blueray)
 
     if len(blueray) > m:
         
