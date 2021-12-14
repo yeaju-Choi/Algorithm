@@ -27,11 +27,10 @@ m = int(input())
 find = list(map(int,input().split())) 
 
 card.sort() 
-find.sort()
 
 def binary_search(data):
     start = 0
-    end = len(card) 
+    end = len(card) - 1
 
     while start <= end:
         mid = (start + end) // 2 
@@ -39,11 +38,11 @@ def binary_search(data):
         if card[mid] == data:
             return 1 
 
-        elif card[mid] > data:
-            end = mid  -1 
+        elif card[mid] < data:
+            start = mid + 1 
         
         else:
-            start = mid + 1 
+            end = mid - 1
         
     return 0 
 
