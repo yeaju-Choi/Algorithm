@@ -15,23 +15,25 @@ t = int(input())
 
 def binary_search(data,start,end):
     
-    print("now data => ", end =" ")
-    print(data)
+    # print("now data => ", end =" ")
+    # print(data)
     answer = 0
     while start <= end:
         mid = (start + end) // 2 
 
         if prey[mid] < data:
-            answer = len(prey[:mid+1]) 
+            # answer = len(prey[:mid+1]) 
+            # answer = len(prey[:mid+1]) 
+            answer = mid + 1
             start = mid + 1
         else:
             end = mid - 1 
-        print("answer => ", end =" ")
-        print(answer)
+
+
+        # print("answer => ", end =" ")
+        # print(answer)
     return answer 
         
-        
-
 
 for i in range(t):
     n,m = map(int,input().split()) 
