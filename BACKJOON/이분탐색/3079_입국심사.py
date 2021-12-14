@@ -4,22 +4,51 @@ input = sys.stdin.readline
 
 n,m = map(int,input().split()) # 심사대 개수와, 상근이와친구들 수 
 arr = list()
+
+# for i in range(n):
+#     item = int(input())
+#     arr.append((item,item))
+
+
+# # print(arr)
+# for i in range(m-1):
+#     item,original = heapq.heappop(arr)
+#     answer += item 
+#     heapq.heappush(arr,(item+original,original))
+#     # print(arr)
+
+
+# print(arr[0][0])
+
 for i in range(n):
-    item = int(input())
-    arr.append((item,item))
+    arr.append(int(input()))
 
-
+start = 0
+end = m * max(arr) # 걸릴수 있는 최대 시간 
 answer = 0
 
-print(arr)
-for i in range(m-1):
-    item,original = heapq.heappop(arr)
-    answer += item 
-    heapq.heappush(arr,(item+original,original))
-    print(arr)
+# print(arr)
+while start <= end:
+    mid = (start + end) // 2
+    print(" mid ==> ", end = " ")
+    print(mid)
+    judgedPeople = 0
 
+    # 나온 인원수가 m명보다 많으면 그 시간이 가능
+    #  나온 인원수가 m명보다 적으면 그 시간은 불가능 
 
-print(arr[0][0])
+    for item in arr:
+        judgedPeople += mid // item
+    
+
+    print(" people ==> ", end = " ")
+    print(judgedPeople)
+    if judgedPeople < m:
+        start = mid + 1
+    else:
+        answer = mid
+        end = mid - 1
+
 
 
 '''
