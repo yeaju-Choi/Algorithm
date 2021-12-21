@@ -20,6 +20,10 @@
 '''
 첫 번째 줄에 현우가 통장에서 인출해야 할 최소 금액 K를 출력한다
 '''
+
+
+# 범위를 써야하는 돈의 max ~ 써야하는 돈의 합 
+
 import sys
 
 input = sys.stdin.readline
@@ -30,7 +34,7 @@ spendarr = list()
 for i in range(n):
     spendarr.append(int(input()))
 
-# print(sum(spendarr)/m)
+# print(sum(spendarr)/m)  
 
 start = max(spendarr)
 end = sum(spendarr) 
@@ -56,9 +60,9 @@ while start <= end:
 
     if temp: # 임시 데이터에 아직 데이터가 남아있다면 
         arr.append(temp)
-    print("=> mid ", end = " ")
-    print(mid)
-    print(arr)
+    # print("=> mid ", end = " ")
+    # print(mid)
+    # print(arr)
 
     if len(arr) > m:  # 오늘 쓸 금액을 늘려야함 
         

@@ -17,7 +17,7 @@ n = int(input())  # 정점
 m = int(input()) # 연결수 
 count = []
 graph = [[] for i in range(n+1)]  # 비어있는 그래프 리스트 만들기 
-
+print(graph)
 
 for _ in range(m):
     a,b = map(int,input().split())

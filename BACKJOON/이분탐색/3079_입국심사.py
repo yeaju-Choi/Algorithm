@@ -30,27 +30,23 @@ answer = 0
 # print(arr)
 while start <= end:
     mid = (start + end) // 2
-    print(" mid ==> ", end = " ")
-    print(mid)
-    judgedPeople = 0
+    
+    count = 0
 
     # 나온 인원수가 m명보다 많으면 그 시간이 가능
     #  나온 인원수가 m명보다 적으면 그 시간은 불가능 
 
     for item in arr:
-        judgedPeople += mid // item
+        count += mid // item
     
-
-    print(" people ==> ", end = " ")
-    print(judgedPeople)
-    if judgedPeople < m:
+    if count < m:
         start = mid + 1
     else:
         answer = mid
         end = mid - 1
 
 
-
+print(answer)
 '''
 예를 들어, 두 심사대가 있고, 심사를 하는데 걸리는 시간이 각각 7초와 10초라고 하자. 줄에 서 있는 사람이 6명이라면,
 
