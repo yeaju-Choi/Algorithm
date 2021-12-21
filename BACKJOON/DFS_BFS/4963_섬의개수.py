@@ -1,6 +1,6 @@
 import sys
 from collections import deque
-
+sys.setrecursionlimit(10000)
 input = sys.stdin.readline
 
 # 상하좌우대각선 
@@ -18,7 +18,7 @@ def dfs(graph,x,y,w,h):
         for i in range(len(dx)):
             
             dfs(graph,x+dx[i],y+dy[i],w,h) 
-            # print("++")
+            
         return True
     # print("-----")
     # for i in graph:
@@ -42,8 +42,10 @@ while True:
     for i in range(h):
         for j in range(w):
             
-            if dfs(graph,i,j,w,h) == True:
-                # print("return 됨")
+            if graph[i][j] == 1:
+                dfs(graph,i,j,w,h)
                 result += 1
+            # if dfs(graph,i,j,w,h) == True:
+            #     result += 1
 
     print(result)
