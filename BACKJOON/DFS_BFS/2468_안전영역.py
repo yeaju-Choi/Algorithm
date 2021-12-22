@@ -25,8 +25,6 @@ def bfs(x,y,limit,visited):
 
         a,b = queue.popleft() 
         # graph[a][b] = -9999
-        
-        
         # print("=> visited : ",end = " ")
         # print(visited)
         
@@ -48,13 +46,8 @@ graph = list()
 dx = [-1,1,0,0]
 dy = [0,0,1,-1]
 
-
-
-
 for _ in range(n):
     graph.append(list(map(int,input().split()))) 
-
-
 
 answer = 0 
 max_height = 0

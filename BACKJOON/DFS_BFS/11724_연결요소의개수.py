@@ -41,13 +41,9 @@ def dfs(graph,v,visited):
     visited[v] = True
 
     
-    for i in graph[ㅍ]:
-        if not visited[i]: # False 일때 
-            
-            flag = True 
-            dfs(graph,i,visited,flag)
-
-    return flag 
+    for i in graph[v]:
+        if not visited[i]: # False 일때         
+            dfs(graph,i,visited)
 
 n,m = map(int,input().split()) 
 graph = [[] for i in range(n+1)] 
