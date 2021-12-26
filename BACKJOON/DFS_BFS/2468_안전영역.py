@@ -74,3 +74,6 @@ for limit in range(max_height):
 
 print(answer)
             
+
+
+# range(max(map(max, arr))
