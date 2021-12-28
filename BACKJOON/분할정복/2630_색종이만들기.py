@@ -13,6 +13,40 @@
 
 import sys 
 input = sys.stdin.readline 
+sys.setrecursionlimit(1000000)
+
+white = 0
+blue = 0 
+
+def paperCount(x,y,n): 
+    
+    global white 
+    global blue 
+
+    check = paper[x][y]
+
+    for i in range(x,x+n):
+        for j in range(y,y+n): 
+            if paper[i][j] != check: # 하나라도 다른게 나오면 4등분 
+                paperCount(x,y,n//2)
+                paperCount(x,y+(n//2),n//2)
+                paperCount(x+(n//2),y,n//2)
+                paperCount(x+(n//2),y+(n//2),n//2)
+                return
+                
+    
+    if check == 1: # 파란색 
+        blue += 1
+        
+        
+    
+    elif check == 0:
+        white += 1 
+        
+        
+
+
+    
 
 n = int(input()) 
 paper = list() 
@@ -20,3 +54,9 @@ paper = list()
 for _ in range(n): 
     paper.append(list(map(int,input().split()))) 
 
+
+
+paperCount(0,0,n) 
+
+print(white)
+print(blue)
