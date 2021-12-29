@@ -30,17 +30,22 @@ def countPaper(x,y,n):
             if paper[i][j] != check: 
 
                 
-                countPaper(x,y+((n//3)*0),n//3)
-                countPaper(x,y+((n//3)*1),n//3)
-                countPaper(x,y+((n//3)*2),n//3)   
+                for k in range(3):
+                    for l in range(3):
+                        countPaper(x+((n//3)*k),y+((n//3)*l),n//3)
+                      
 
-                countPaper(x+((n//3)*1),y+((n//3)*0),n//3)
-                countPaper(x+((n//3)*1),y+((n//3)*1),n//3)
-                countPaper(x+((n//3)*1),y+((n//3)*2),n//3)   
+                # countPaper(x,y+((n//3)*0),n//3)
+                # countPaper(x,y+((n//3)*1),n//3)
+                # countPaper(x,y+((n//3)*2),n//3)   
 
-                countPaper(x+((n//3)*2),y+((n//3)*0),n//3)
-                countPaper(x+((n//3)*2),y+((n//3)*1),n//3)
-                countPaper(x+((n//3)*2),y+((n//3)*2),n//3)   
+                # countPaper(x+((n//3)*1),y+((n//3)*0),n//3)
+                # countPaper(x+((n//3)*1),y+((n//3)*1),n//3)
+                # countPaper(x+((n//3)*1),y+((n//3)*2),n//3)   
+
+                # countPaper(x+((n//3)*2),y+((n//3)*0),n//3)
+                # countPaper(x+((n//3)*2),y+((n//3)*1),n//3)
+                # countPaper(x+((n//3)*2),y+((n//3)*2),n//3)   
 
                 return 
 

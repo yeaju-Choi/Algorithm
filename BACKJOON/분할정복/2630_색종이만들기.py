@@ -13,7 +13,7 @@
 
 import sys 
 input = sys.stdin.readline 
-sys.setrecursionlimit(1000000)
+# sys.setrecursionlimit(1000000)
 
 white = 0
 blue = 0 
@@ -28,10 +28,15 @@ def paperCount(x,y,n):
     for i in range(x,x+n):
         for j in range(y,y+n): 
             if paper[i][j] != check: # 하나라도 다른게 나오면 4등분 
-                paperCount(x,y,n//2)
-                paperCount(x,y+(n//2),n//2)
-                paperCount(x+(n//2),y,n//2)
-                paperCount(x+(n//2),y+(n//2),n//2)
+
+                for k in range(2):
+                    for l in range(2):
+                        paperCount(x+((n//2)*k),y+((n//2)*l),n//2)
+
+                    # paperCount(x,y,n//2)
+                    # paperCount(x,y+(n//2),n//2)
+                    # paperCount(x+(n//2),y,n//2)
+                    # paperCount(x+(n//2),y+(n//2),n//2)
                 return
                 
     
