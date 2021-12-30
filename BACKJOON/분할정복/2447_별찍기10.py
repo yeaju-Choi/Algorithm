@@ -41,7 +41,7 @@ def append_star(LEN):
         return ['*'] 
     Stars = append_star(LEN//3) 
     L = [] 
-    print(Stars)
+    # print(Stars)
     for S in Stars:
         # print('=>',Stars)
         L.append(S*3) 

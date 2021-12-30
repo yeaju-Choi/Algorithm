@@ -23,7 +23,7 @@ def paperCount(x,y,n):
     global white 
     global blue 
 
-    check = paper[x][y]
+    check = paper[x][y] 
 
     for i in range(x,x+n):
         for j in range(y,y+n): 
@@ -42,24 +42,15 @@ def paperCount(x,y,n):
     
     if check == 1: # 파란색 
         blue += 1
-        
-        
-    
+
     elif check == 0:
         white += 1 
-        
-        
-
-
-    
 
 n = int(input()) 
 paper = list() 
 
 for _ in range(n): 
     paper.append(list(map(int,input().split()))) 
-
-
 
 paperCount(0,0,n) 
 

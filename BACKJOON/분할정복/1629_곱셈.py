@@ -9,7 +9,34 @@
 
 a,b,c = map(int,input().split()) 
 
-for i in range(b):
-    a *= a
+# for i in range(b):
+#     a *= a
 
-print(a%c)
+# print(a%c)
+
+def mulMatrix(length):
+    if length == 1:
+        return a % c
+    if length % 2 == 0: # 짝수일때 
+        left = mulMatrix(length // 2)
+        return left * left % c
+    else: # 홀수일때 
+        left = mulMatrix(length // 2)
+        return left * left * a % c
+
+
+print(mulMatrix(b))
+
+# overflow 
+# def dnc(length):
+#     if length == 1:
+#         return a 
+#     if length % 2 == 0:
+#         left = dnc(length // 2)
+#         return left * left 
+#     else:
+#         left = dnc(length // 2)
+#         return left * left * a 
+
+
+# print(dnc(b))
