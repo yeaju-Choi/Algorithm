@@ -17,7 +17,7 @@ def solution(board, moves):
                         stack.pop(-1)
                         answer += 2
                 
-                break
+                
 
             
     return answer
