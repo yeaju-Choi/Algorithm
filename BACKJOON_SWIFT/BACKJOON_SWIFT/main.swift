@@ -15,3 +15,4 @@ import Foundation
 //sol2577()
         
 
+sol3052()
