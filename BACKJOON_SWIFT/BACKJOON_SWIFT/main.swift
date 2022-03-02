@@ -16,4 +16,4 @@ import Foundation
 //sol4344()
 
 //sol5585()
-sol2217()
+sol10773()
