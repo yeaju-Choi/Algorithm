@@ -24,11 +24,13 @@ for _ in range(m):
     graph[a].append(b)
     graph[b].append(a)
 
+# print(graph)
 
 visited = [False] * (n+1)
 
 dfs(graph,1,visited,count)
 print(len(count)-1)
+print(count)
 
 
 
