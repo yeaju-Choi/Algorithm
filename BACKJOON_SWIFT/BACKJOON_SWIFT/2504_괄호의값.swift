@@ -23,16 +23,16 @@ struct Stack2504<T> {
 
 
 func sol2504() {
-    
-    let input = readLine()!
-    var stack: Stack2504<Character> = Stack2504()
-    
-    for char in input{
-        stack.push(item: char)
-        
-        
-    }
-    
+//    
+//    let input = readLine()!
+//    var stack: Stack2504<Character> = Stack2504()
+//    
+//    for char in input{
+//        stack.push(item: char)
+//        
+//        
+//    }
+//    
     
     
     

@@ -16,4 +16,10 @@ import Foundation
 //sol4344()
 
 //sol5585()
-sol10773()
+//sol10773()
+
+let idList = ["muzi", "frodo", "apeach", "neo"]
+let report = ["muzi frodo","apeach frodo","frodo neo","muzi neo","apeach muzi"]
+let k = 2
+
+solution(idList, report, k)
