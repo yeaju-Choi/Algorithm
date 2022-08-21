@@ -10,6 +10,7 @@
 		B3324D5128B11ED400F7263F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3324D5028B11ED400F7263F /* main.swift */; };
 		B3324D5828B11EF100F7263F /* 직사각형별찍기.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3324D5728B11EF100F7263F /* 직사각형별찍기.swift */; };
 		B3324D5C28B21DCA00F7263F /* 행렬의덧셈.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3324D5B28B21DCA00F7263F /* 행렬의덧셈.swift */; };
+		B3324D5E28B2271900F7263F /* 핸드폰번호가리기.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3324D5D28B2271900F7263F /* 핸드폰번호가리기.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		B3324D5028B11ED400F7263F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		B3324D5728B11EF100F7263F /* 직사각형별찍기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "직사각형별찍기.swift"; sourceTree = "<group>"; };
 		B3324D5B28B21DCA00F7263F /* 행렬의덧셈.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "행렬의덧셈.swift"; sourceTree = "<group>"; };
+		B3324D5D28B2271900F7263F /* 핸드폰번호가리기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "핸드폰번호가리기.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				B3324D5028B11ED400F7263F /* main.swift */,
 				B3324D5728B11EF100F7263F /* 직사각형별찍기.swift */,
 				B3324D5B28B21DCA00F7263F /* 행렬의덧셈.swift */,
+				B3324D5D28B2271900F7263F /* 핸드폰번호가리기.swift */,
 			);
 			path = Programmers_SWIFT;
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3324D5E28B2271900F7263F /* 핸드폰번호가리기.swift in Sources */,
 				B3324D5C28B21DCA00F7263F /* 행렬의덧셈.swift in Sources */,
 				B3324D5128B11ED400F7263F /* main.swift in Sources */,
 				B3324D5828B11EF100F7263F /* 직사각형별찍기.swift in Sources */,
