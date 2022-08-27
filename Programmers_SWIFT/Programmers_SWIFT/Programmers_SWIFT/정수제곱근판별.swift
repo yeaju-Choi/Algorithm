@@ -7,7 +7,8 @@
 
 import Foundation
 
-func 정수제곱근판별(_ n:Int64) -> Int64 {
-    
-    return 0
+// Int(exactly: ) 사용
+func 정수제곱근판별(_ n:Int64) -> Decimal {
+    guard let b = Int(exactly: sqrt(Double(n))) else {return -1}
+    return pow(Decimal(b+1), 2)
 }
