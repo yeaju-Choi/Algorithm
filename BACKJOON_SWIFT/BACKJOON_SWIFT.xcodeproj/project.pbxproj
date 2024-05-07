@@ -20,6 +20,7 @@
 		B3C4C03027A6EEA300A97349 /* 10818_최소,최대.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C4C02F27A6EEA300A97349 /* 10818_최소,최대.swift */; };
 		B3C4C03227A6F95C00A97349 /* 2562_최댓값.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C4C03127A6F95C00A97349 /* 2562_최댓값.swift */; };
 		B3E6260B27D5003300EC3D3C /* 2504_괄호의값.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E6260A27D5003300EC3D3C /* 2504_괄호의값.swift */; };
+		C0D5E6B62BEA1F8D0044EA79 /* 12919_A와B2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D5E6B52BEA1F8D0044EA79 /* 12919_A와B2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +50,7 @@
 		B3C4C02F27A6EEA300A97349 /* 10818_최소,최대.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "10818_최소,최대.swift"; sourceTree = "<group>"; };
 		B3C4C03127A6F95C00A97349 /* 2562_최댓값.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2562_최댓값.swift"; sourceTree = "<group>"; };
 		B3E6260A27D5003300EC3D3C /* 2504_괄호의값.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2504_괄호의값.swift"; sourceTree = "<group>"; };
+		C0D5E6B52BEA1F8D0044EA79 /* 12919_A와B2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "12919_A와B2.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				B37F41CC27CFB1CB001F6115 /* 10773_제로.swift */,
 				B3E6260A27D5003300EC3D3C /* 2504_괄호의값.swift */,
 				B3794CCB287C4BFF0005CCFA /* Programmers_신고결과받기.swift */,
+				C0D5E6B52BEA1F8D0044EA79 /* 12919_A와B2.swift */,
 			);
 			path = BACKJOON_SWIFT;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 				B3794CCC287C4BFF0005CCFA /* Programmers_신고결과받기.swift in Sources */,
 				B3C4C03027A6EEA300A97349 /* 10818_최소,최대.swift in Sources */,
 				B33C146127AC08F00015260C /* 8958_OX퀴즈.swift in Sources */,
+				C0D5E6B62BEA1F8D0044EA79 /* 12919_A와B2.swift in Sources */,
 				B3C4C00327A6DC1900A97349 /* main.swift in Sources */,
 				B33C145F27ABFD9D0015260C /* 1546_평균.swift in Sources */,
 				B3C4C03227A6F95C00A97349 /* 2562_최댓값.swift in Sources */,
@@ -293,8 +297,9 @@
 		B3C4C00727A6DC1900A97349 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9FL2F2U32R;
+				DEVELOPMENT_TEAM = 23CT9DBA5H;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -304,8 +309,9 @@
 		B3C4C00827A6DC1900A97349 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9FL2F2U32R;
+				DEVELOPMENT_TEAM = 23CT9DBA5H;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
