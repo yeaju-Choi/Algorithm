@@ -6,6 +6,8 @@
 //
 
 /*
+ 
+ 5 17  // 5-10-9-18-17 순으로 가면 2초
  - 1초 후에 X-1 또는 X+1
  - 0초 후에 2*X의 위치로 이동
  
@@ -15,6 +17,35 @@
 비용있는 그래프 ?
  
  bfs~
+ 
+  // 5 0
+ p = [100000] * 200000.
+ n, k = map(int, input().split())
+ dp[n] = 0
+
+ def find_dp(now, x):
+    
+     print(x, abs(k-n), x>abs(k-n), now>k*2 )
+     if(now<=0 or x>abs(k-n)):
+         return
+
+     dp[now] = min(x, dp[now])
+     if now == k:
+         return
+
+     print(dp[now-1]>x+1, now, x, dp[now-1])
+     if (dp[now*2]>x):
+         find_dp(now*2, x)
+     if(now>0 and dp[now-1]>x+1):
+         find_dp(now-1, x+1)
+     if(now<=k*2 and dp[now+1]>x+1):
+         find_dp(now+1, x+1)
+
+ now = n
+ find_dp(now, 0)
+
+ print(dp[k])
+ 
  
  */
 
@@ -28,7 +59,7 @@ func sol13549() {
     var queue: [(Int, Int)] = []
     var visited = Array(repeating: false, count: 100001)
     bfs()
-    
+    // 현재 위치, 걸리는시간
     func bfs(){
         queue.append((now, 0))
         

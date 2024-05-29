@@ -23,6 +23,8 @@ import Foundation
 //sol13549()
 //sol15989()
 
+//sol1927()
+sol13549()
 
 
 
